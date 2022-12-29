@@ -1,0 +1,65 @@
+<friendsList>
+    <friend>
+        <name>Eslam</name>
+    </friend>
+    <friend>
+        <name>Zaid</name>
+    </friend>
+    <friend>
+        <name>Osama</name>
+    </friend>
+    <bestfriend>
+        <name>Ahmed</name>
+    </bestfriend>
+</friendsList>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note[
+<!ELEMENT note (to,from,heading,body)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+]>
+
+
+<note>
+    <to>Ali</to>
+    <from>Mohammed</from>
+    <heading>Reminder</heading>
+    <body>Don't forgety the Assignment this week!</body>
+</note> -->
