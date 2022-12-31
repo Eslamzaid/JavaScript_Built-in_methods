@@ -38,3 +38,33 @@ console.log("Oh im in another group linked with the previous one")
 console.groupEnd()
 
 //* will create a group and then another one and ultimately will end the group
+//? groupCollapse() is similar but with small changes
+
+
+//! table.()
+console.table(['hi','your', 'name'])
+//* will return a table with index to all the above properties!
+
+
+//! info()
+console.info('this will write a message to the console')
+//*Similar to .log() but with some small difference 
+
+//! log()
+console.log('this will write a message to the console')
+//* This is the king of all consoles and no need to explain it
+
+
+//! time() & timeEnd()
+console.time()
+console.log('this will write a message to the console')
+console.log('this will write a message to the console')
+console.log('this will write a message to the console')
+console.timeEnd()
+
+//* will make a timer and then will stop it
+
+//! warn()
+console.warn('Yoo stop right there you are breaking the rules')
+
+//* writes a warning to the console  
