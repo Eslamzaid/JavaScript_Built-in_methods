@@ -77,3 +77,11 @@ console.log(whoIsBigger)
 
 //? compares two strings in the current locale is based on the language settings in the browser
 //* -1 --
+
+//! match()
+
+var resMatch = 'EsElam'
+const reg = /[A-Z]/g
+const useMathc = resMatch.match(reg)
+console.log(useMathc)
+
