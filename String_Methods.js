@@ -85,3 +85,15 @@ const reg = /[A-Z]/g
 const useMatch = resMatch.match(reg)
 console.log(useMatch)
 
+//? searches a  string for a match against a regular  expression, and returns the match as an Array object.
+//* will return = ['E','E']
+
+
+//! repeat()
+
+var resRepeat = '200'
+var useRepeat = resRepeat.repeat(2)
+console.log(useRepeat)
+
+//! returns a new string with a specified number of compiles of the str.
+//* will return = 200200
