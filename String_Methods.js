@@ -82,6 +82,6 @@ console.log(whoIsBigger)
 
 var resMatch = 'EsElam'
 const reg = /[A-Z]/g
-const useMathc = resMatch.match(reg)
-console.log(useMathc)
+const useMatch = resMatch.match(reg)
+console.log(useMatch)
 
