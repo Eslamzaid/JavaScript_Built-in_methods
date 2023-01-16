@@ -115,4 +115,5 @@ var strSearch = "Create projects"
 var resStr = strSearch.search("projects")
 console.log(resStr)
 
-//
+//? searches a strin for a specified value, and return the position fo the match.
+//* will return = 7
