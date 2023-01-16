@@ -95,5 +95,24 @@ var resRepeat = '200'
 var useRepeat = resRepeat.repeat(2)
 console.log(useRepeat)
 
-//! returns a new string with a specified number of compiles of the str.
+//? returns a new string with a specified number of compiles of the str.
 //* will return = 200200
+
+
+//! replace()
+
+var yourName = "what is your name"
+var where = yourName.replace("what", "Eslam")
+console.log(where)
+
+//? searches a string for a specified value, or regular expression, returns a new string where the specified value are replaced.
+//* will return = Eslam is your name
+
+
+//! search()
+
+var strSearch = "Create projects"
+var resStr = strSearch.search("projects")
+console.log(resStr)
+
+//
