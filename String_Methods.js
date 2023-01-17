@@ -133,3 +133,14 @@ var strSlice = "Hellow world"
 var res = strSlice.slice(7)
 console.log(res)
 //? extracts parts of a string and return the extracted in a new string
+//*Will return = world
+
+
+
+//! split()
+
+var numSplit = "one is the first number"
+var resSplit = numSplit.split(" ")
+console.log(resSplit)
+//? is used to split a string into an array of substring
+//*Will return = ['one','is','the','first','number']
