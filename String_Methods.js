@@ -144,3 +144,21 @@ var resSplit = numSplit.split(" ")
 console.log(resSplit)
 //? is used to split a string into an array of substring
 //*Will return = ['one','is','the','first','number']
+
+
+
+//! startsWith()
+var strStartsWith = "Hello world"
+var resStartsWith = strStartsWith.startsWith("Helo")
+console.log(resStartsWith)
+//? determines wether a string begins with the characters of a specified string
+//*Will return = false
+
+
+
+//! substring()
+var strSubstr = "Hello world"
+var resSubstr = strSubstr.substring(1,3)
+console.log(resSubstr)
+//? extracts parts of a string, beginning at the character at the specified position, nd returns the specified number of a character.
+//*Will return = el
