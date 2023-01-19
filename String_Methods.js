@@ -67,7 +67,7 @@ console.log(indexOff)
 //! 8 lastIndexOf()
 var helleLastIndexOf = 'hello'
 
-const hLastIndexOf =  helleLastIndexOf.lastIndexOf('l')
+const hLastIndexOf = helleLastIndexOf.lastIndexOf('l')
 console.log(hLastIndexOf)
 //? return the position of the last occupance of a specified value in a string start from the end to the begging
 //* will return 3
@@ -78,7 +78,7 @@ console.log(hLastIndexOf)
 var whoIsBigger1 = 'hello'
 var whoIsBigger2 = 'world'
 
-const whoIsBigger =  whoIsBigger1.localeCompare(whoIsBigger2)
+const whoIsBigger = whoIsBigger1.localeCompare(whoIsBigger2)
 console.log(whoIsBigger)
 //? compares two strings in the current locale is based on the language settings in the browser
 //* -1 --
@@ -158,7 +158,7 @@ console.log(resStartsWith)
 
 //! substring()
 var strSubstr = "Hello world"
-var resSubstr = strSubstr.substring(1,3)
+var resSubstr = strSubstr.substring(1, 3)
 console.log(resSubstr)
 //? extracts parts of a string, beginning at the character at the specified position, nd returns the specified number of a character.
 //*Will return = el
