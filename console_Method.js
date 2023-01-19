@@ -1,6 +1,6 @@
 // ! assert()
 let i = 500
-i > 1000 ?  console.log("Oh yes!") : console.assert(i=false,"Oh no!") 
+i > 1000 ? console.log("Oh yes!") : console.assert(i = false, "Oh no!")
 
 
 // ! count()
@@ -25,7 +25,7 @@ console.clear()
 
 //! error()
 let hi = 5
-hi > 10 ?  console.log("Yes it is!") : console.error("No it's not!")
+hi > 10 ? console.log("Yes it is!") : console.error("No it's not!")
 // Will return an error if the input is wrong 
 
 
@@ -42,7 +42,7 @@ console.groupEnd()
 
 
 //! table.()
-console.table(['hi','your', 'name'])
+console.table(['hi', 'your', 'name'])
 //* will return a table with index to all the above properties!
 
 
