@@ -162,3 +162,7 @@ var resSubstr = strSubstr.substring(1, 3)
 console.log(resSubstr)
 //? extracts parts of a string, beginning at the character at the specified position, nd returns the specified number of a character.
 //*Will return = el
+
+
+
+//!
