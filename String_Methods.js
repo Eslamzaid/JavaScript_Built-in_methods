@@ -167,4 +167,5 @@ console.log(resSubstr)
 
 //! toLocalLowerCase()
 var strToLocalLowerCase = 'HELLO WORLD'
-var resToloar
+var resToLocalLowerCase = strToLocalLowerCase.toLocaleLowerCase()
+console.log(resToLocalLowerCase)
