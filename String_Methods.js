@@ -169,3 +169,31 @@ console.log(resSubstr)
 var strToLocalLowerCase = 'HELLO WORLD'
 var resToLocalLowerCase = strToLocalLowerCase.toLocaleLowerCase()
 console.log(resToLocalLowerCase)
+//?converts a string to lowercase, according to the host's current locale.
+//* Will return = hello world
+
+
+//! toLowerCase()
+var strToLowerCase = "HELLO WORLD"
+var resToLowerCase = strToLowerCase.toLowerCase()
+console.log(resToLowerCase)
+//? same as the above, but with less specification
+//* Will return = hello world
+
+
+
+//! toLocalUpperCase()
+var strToLocalUpperCase = 'hello world'
+var resToLocalUpperCase = strToLocalUpperCase.toLocaleUpperCase()
+console.log(resToLocalUpperCase)
+//? converts a  string to uppercase letters, according to the host's current locale.
+//* Will return = HELLO WORLD
+
+
+
+//! toUpperCase()
+var strToUpperCase = 'hello world'
+var resToUpperCase = strToUpperCase.toUpperCase()
+console.log(resToLocalUpperCase)
+//? same as the above, but with less specification
+//* Will return = HELLO WORLD
