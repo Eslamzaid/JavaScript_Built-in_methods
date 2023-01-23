@@ -197,3 +197,11 @@ var resToUpperCase = strToUpperCase.toUpperCase()
 console.log(resToLocalUpperCase)
 //? same as the above, but with less specification
 //* Will return = HELLO WORLD
+
+
+//! trim() 
+var strTrim = '              Hello            '
+var resTrim = strTrim.trim()
+console.log(resTrim)
+//? Removes the whitespace from both sides of a string Dosn't change the original string.
+//* Will return = Hello
