@@ -122,7 +122,7 @@ console.log(where)
 var strSearch = "Create projects"
 var resStr = strSearch.search("projects")
 console.log(resStr)
-//? searches a strin for a specified value, and return the position fo the match.
+//? searches a string for a specified value, and return the position fo the match.
 //* will return = 7
 
 
@@ -199,9 +199,10 @@ console.log(resToLocalUpperCase)
 //* Will return = HELLO WORLD
 
 
+
 //! trim() 
 var strTrim = '              Hello            '
 var resTrim = strTrim.trim()
 console.log(resTrim)
-//? Removes the whitespace from both sides of a string Dosn't change the original string.
+// ? Removes the whitespace from both sides of a string doesn't change the original string.
 //* Will return = Hello
