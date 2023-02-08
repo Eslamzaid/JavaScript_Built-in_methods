@@ -42,3 +42,16 @@ console.log([1, 2, 3, 4, 5].copyWithin(-2, -3, -1));
 //?copies array elements to another position in the array, overwriting the existing values.
 
 
+
+//! entries
+const array1 = ['a', 'b', 'c'];
+
+const iterator1 = array1.entries();
+
+console.log(iterator1.next().value);
+// Expected output: Array [0, "a"]
+
+console.log(iterator1.next().value);
+// Expected output: Array [1, "b"]
+//? returns an array iterator obj/arr with key-value pairs
+
