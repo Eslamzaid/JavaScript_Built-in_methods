@@ -55,3 +55,12 @@ console.log(iterator1.next().value);
 // Expected output: Array [1, "b"]
 //? returns an array iterator obj/arr with key-value pairs
 
+
+//! every()
+var ages = [2,4,6,8,10]
+const checkAdult = () => {
+    return ages > 6
+}
+console.log(ages.every(checkAdult))
+// false
+//? check if all elements in an array pass a test(provided as a function)
