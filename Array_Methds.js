@@ -57,10 +57,18 @@ console.log(iterator1.next().value);
 
 
 //! every()
-var ages = [2,4,6,8,10]
+var ages = [2, 4, 6, 8, 10]
 const checkAdult = () => {
     return ages > 6
 }
 console.log(ages.every(checkAdult))
 // false
 //? check if all elements in an array pass a test(provided as a function)
+
+
+//! fill()
+var mango = ['Hello', "this", "is", "orange"]
+var res = mango.fill('Apple', 3)
+console.log(res)
+// ['Hello', 'this', 'is', 'Apple']
+//?Fills the specified in an array with a static value, you can specify the position of where to start and end the filling.
