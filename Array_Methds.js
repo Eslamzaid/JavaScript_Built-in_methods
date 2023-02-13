@@ -72,3 +72,16 @@ var res = mango.fill('Apple', 3)
 console.log(res)
 // ['Hello', 'this', 'is', 'Apple']
 //?Fills the specified in an array with a static value, you can specify the position of where to start and end the filling.
+
+
+//! filter()
+const checkAdu = (element) => {
+    return element >= 15
+}
+
+
+var ages = [10, 15, 20, 25]
+var res = ages.filter(checkAdu)
+console.log(res)
+//* -> [15, 20, 25]
+//? creates an array filled with all array elements that passes a test 
