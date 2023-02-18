@@ -84,4 +84,12 @@ var ages = [10, 15, 20, 25]
 var res = ages.filter(checkAdu)
 console.log(res)
 //* -> [15, 20, 25]
-//? creates an array filled with all array elements that passes a test 
+//? creates an array filled with all array elements that passes a test
+
+
+//! find()
+let num = [1, 2, 3]
+let letFind = num.find(element => element > 2)
+console.log(letFind)
+//* -> 3
+//? returns the value of the first element in an array that passes a test
