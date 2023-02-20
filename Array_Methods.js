@@ -93,3 +93,13 @@ let letFind = num.find(element => element > 2)
 console.log(letFind)
 //* -> 3
 //? returns the value of the first element in an array that passes a test
+
+
+//! findIndex()
+const findAge = [10, 20, 30, 40, 50]
+const LetsFind = findAge.findIndex((element) => {
+    return element > 40
+})
+console.log(LetsFind)
+//* --> 4
+//? returns tthe index of the first element in an array that pass a test.
