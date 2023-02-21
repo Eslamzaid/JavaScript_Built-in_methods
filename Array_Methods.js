@@ -102,4 +102,16 @@ const LetsFind = findAge.findIndex((element) => {
 })
 console.log(LetsFind)
 //* --> 4
-//? returns tthe index of the first element in an array that pass a test.
+//? returns the index of the first element in an array that pass a test.
+
+
+//! forEach()
+const ForEachBB = [1, 2, 3, 4, 5]
+const letsdoId = ForEachBB.forEach((element, index) => console.log(`The element ${element} has been multiplied by it's index which is ${index} and the result is = ${element * index}`))
+console.log(letsdoId)
+//* --> The element 1 has been multiplied by it's index which is 0 and the result is = 0
+//* --> The element 2 has been multiplied by it's index which is 1 and the result is = 2
+//* --> The element 3 has been multiplied by it's index which is 2 and the result is = 6
+//* --> The element 4 has been multiplied by it's index which is 3 and the result is = 12
+//* --> The element 5 has been multiplied by it's index which is 4 and the result is = 20
+//? calls a function once for each element in an array in order.
