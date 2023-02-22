@@ -115,3 +115,11 @@ console.log(letsdoId)
 //* --> The element 4 has been multiplied by it's index which is 3 and the result is = 12
 //* --> The element 5 has been multiplied by it's index which is 4 and the result is = 20
 //? calls a function once for each element in an array in order.
+
+
+//! includes()
+const theInludes = ['So', 'Who', 'Its', "going?"]
+const seasearch = theInludes.includes("going?")
+console.log(seasearch)
+//* --> true
+//? determine whether an array contains a specified element.
