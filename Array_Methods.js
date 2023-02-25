@@ -123,3 +123,12 @@ const seasearch = theInludes.includes("going?")
 console.log(seasearch)
 //* --> true
 //? determine whether an array contains a specified element.
+
+
+
+//! isArray()
+const issArray = [1, 2, 3, 4, 5]
+const arr = Array.isArray(issArray)
+console.log(arr)
+//* --> true
+//? determins whether an object is an array
