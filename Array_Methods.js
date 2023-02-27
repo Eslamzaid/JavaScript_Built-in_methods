@@ -132,3 +132,9 @@ const arr = Array.isArray(issArray)
 console.log(arr)
 //* --> true
 //? determins whether an object is an array
+
+
+//! join()
+const brejoin = ['Water', 'Hydrogen Is equal to ???']
+const theUseJoin = brejoin.join(' + ')
+console.log(theUseJoin)
