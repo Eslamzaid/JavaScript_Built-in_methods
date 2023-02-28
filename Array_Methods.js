@@ -138,3 +138,13 @@ console.log(arr)
 const brejoin = ['Water', 'Hydrogen Is equal to ???']
 const theUseJoin = brejoin.join(' + ')
 console.log(theUseJoin)
+
+
+//! lastIndexOf()
+const InArrayModeContent = ['Bravery and valor is one of the essential requirements to be a soldier', 'my father was brave and', 'valor']
+const InStringModeContent = 'Bravery and valor is one of the essential requirements to be a soldier my father was brave and valor'
+const InArrayMode = InArrayModeContent.lastIndexOf('valor')
+const InStringMode = InStringModeContent.lastIndexOf('valor')
+console.log(InArrayMode) // * --> 2
+console.log(InStringMode) // * --> 95
+//? searches the array of the specified item
