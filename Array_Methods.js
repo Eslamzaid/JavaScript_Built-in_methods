@@ -171,5 +171,13 @@ const meat = ["chicken", "beef"];
 const tur = "Turkey";
 const added = meat.push(tur);
 console.log(meat);
-//* [ 'chicken', 'beef', 'Turkey' ]
+//* -> [ 'chicken', 'beef', 'Turkey' ]
 //? adds a new items to the end of an array.
+
+//! reduce!
+
+const thered = [1, 2, 3, 4, 5];
+const usingred = thered.reduce((init, currentvalue) => init + currentvalue);
+console.log(usingred);
+//* -> 15
+//? executes a provided function for each value of the array [from Left to Right] and reduces the arrat to a single value.
