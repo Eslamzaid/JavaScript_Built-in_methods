@@ -181,3 +181,13 @@ const usingred = thered.reduce((init, currentvalue) => init + currentvalue);
 console.log(usingred);
 //* -> 15
 //? executes a provided function for each value of the array [from Left to Right] and reduces the arrat to a single value.
+
+
+
+//! shift()
+ 
+const arr1 = [1,2,3]
+const firstele = arr1.shift()
+
+console.log(arr1);
+console.log(firstele);
