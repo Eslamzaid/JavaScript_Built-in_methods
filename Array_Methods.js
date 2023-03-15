@@ -237,5 +237,25 @@ const gotcha = where.at(-1);
 console.log(gotcha);
 //* -> Programming
 //? takes an integer value and returns the item at that index,
-//? allowing for positive nad negative integers. 
+//? allowing for positive nad negative integers.
 //? Negative integers count back from the last item in the array.
+
+console.log("-------------sort-------------");
+
+//! sort()
+const pleasesort1 = [4, 5, 2, 1, 3];
+const pleasesort2 = [4, 5, 2, 1, 3];
+
+console.log(pleasesort1.sort((a, b) => a - b));
+
+//! some()
+const number = [1, 2, 3, 4, 5];
+const someNum = number.some((e) => e >= 5);
+console.log(someNum);
+//* -> true
+//? The some() method tests whether at least one element in the array passes the test implemented by the provided function.
+//? It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false.
+//? It doesn't modify the array.
+
+
+// test
