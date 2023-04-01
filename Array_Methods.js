@@ -1,3 +1,5 @@
+const { resolveSoa } = require("dns");
+
 //! constructor
 var fruitCons = ["Banana", "Apple", "Watermelon"];
 console.log(fruitCons);
@@ -257,4 +259,11 @@ console.log(someNum);
 //? It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false.
 //? It doesn't modify the array.
 
-// test
+//! test()
+const str = "hello world!";
+const result = /^hello/.test(str);
+console.log(result);
+
+// -> true
+//? The test() method executes a search for a match between a regular expression and a specified string. Returns true if there
+//? is a match; false otherwise.
