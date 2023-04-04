@@ -40,3 +40,45 @@ You can also use the SHIFT key together with the ALT key.
 //? The altKey property returns a Boolean value that
 //? indicates whether or not the “ALT” key was pressed
 //? when a key event was triggered.
+
+
+//! AnimationEvent animationName
+{/*
+<style> 
+#myDIV {
+  width: 100%;
+  height: 50px;
+  padding: 16px;
+  background: orange;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+</style>
+
+<body>
+<h1>Animation Events</h1>
+<h2>The animationName Property</h2>
+
+<p>This example uses the addEventListener() method to attach an "animationstart" event to a DIV element.</p>
+<p>The animationName property returns the animation name used in this animation:</p>
+
+<div id="myDIV"></div>
+
+<script>
+const div = document.getElementById("myDIV");
+div.addEventListener("animationstart", myStartFunction);
+
+function myStartFunction(event) {
+  this.innerHTML = "The animation-name is: " + event.animationName;
+}
+</script>
+
+</body> */}
+//? The animationName property returns the name of the animation,
+//? when an animation event occurs.
