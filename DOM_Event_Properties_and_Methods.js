@@ -41,9 +41,9 @@ You can also use the SHIFT key together with the ALT key.
 //? indicates whether or not the “ALT” key was pressed
 //? when a key event was triggered.
 
-
 //! AnimationEvent animationName
-{/*
+{
+  /*
 <style> 
 #myDIV {
   width: 100%;
@@ -79,6 +79,22 @@ function myStartFunction(event) {
 }
 </script>
 
-</body> */}
+</body> */
+}
 //? The animationName property returns the name of the animation,
 //? when an animation event occurs.
+
+// ! bubbles
+function handleInput(e) {
+  // Check whether the event bubbles passes the event along
+  if (!e.bubbles) {
+    passItOn(e);
+  }
+
+  // Already bubbling
+  doOutput(e);
+}
+
+//? The bubbles event property returns a Boolean value
+//? that indicates whether or not an event is a bubbling
+//? event.
