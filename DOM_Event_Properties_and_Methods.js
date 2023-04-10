@@ -98,3 +98,11 @@ function handleInput(e) {
 //? The bubbles event property returns a Boolean value
 //? that indicates whether or not an event is a bubbling
 //? event.
+
+// ! MouseEvent button
+
+//<p id="demo"></p>
+function WhichButton(event) {
+  let text = "You pressed buttfon: " + event.button;
+  document.getElementById("demo").innerHTML = text;
+}
