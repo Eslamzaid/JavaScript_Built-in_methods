@@ -106,3 +106,25 @@ function WhichButton(event) {
   let text = "You pressed buttfon: " + event.button;
   document.getElementById("demo").innerHTML = text;
 }
+
+// ! MouseEvent Buttons
+{
+  /*
+<p>Click anywhere with one or more mouse buttons.</p>
+<pre id="log">buttons: </pre> 
+*/
+}
+let log = document.createTextNode("?"); // let log = new Text('?');
+
+function logButtons(e) {
+  log.data = `${e.buttons} (${e.type})`; // log.nodeValue= `${e.buttons} (${e.type})`;
+}
+
+document.addEventListener("mouseup", logButtons);
+document.addEventListener("mousedown", logButtons);
+// document.addEventListener('mousemove', logButtons);
+
+document.querySelector("#log").appendChild(log);
+//? The buttons property returns a number that indicates
+//? which mouse button or mouse buttons were pressed
+//? when a mouse event was triggered.
