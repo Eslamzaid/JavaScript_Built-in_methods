@@ -128,3 +128,21 @@ document.querySelector("#log").appendChild(logg);
 //? The buttons property returns a number that indicates
 //? which mouse button or mouse buttons were pressed
 //? when a mouse event was triggered.
+
+// ! cancelable
+function preventScrollWheel(event) {
+  if (typeof event.cancelable !== "boolean" || event.cancelable) {
+    // The event can be canceled, so we do so.
+    event.preventDefault();
+  } else {
+    // The event cannot be canceled, so it is not safe
+    // to call preventDefault() on it.
+    console.warn(`The following event couldn't be canceled:`);
+    console.dir(event);
+  }
+}
+
+document.addEventListener("wheel", preventScrollWheel);
+//? The cancelable event property returns a Boolean
+//? value indicating whether or not an event is a
+//? cancelable event.
