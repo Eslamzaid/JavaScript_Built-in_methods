@@ -146,3 +146,23 @@ document.addEventListener("wheel", preventScrollWheel);
 //? The cancelable event property returns a Boolean
 //? value indicating whether or not an event is a
 //? cancelable event.
+
+
+//! The clientX read-only property of the MouseEvent interface provides the horizontal coordinate within the application's viewport at which the event occurred (as opposed to the coordinate within the page).
+
+// HTML
+// <p>Move your mouse to see its position.</p>
+// <p id="screen-log"></p>
+// Copy to Clipboard
+// JavaScript
+let screenLog = document.querySelector("#screen-log");
+document.addEventListener("mousemove", logKey);
+
+function logKey(e) {
+  screenLog.innerText = `
+    Screen X/Y: ${e.screenX}, ${e.screenY}
+    Client X/Y: ${e.clientX}, ${e.clientY}`;
+}
+//? The clientX property returns the horizontal
+//? coordinate (according to the client area) of the
+//? mouse pointer when a mouse event was triggered
