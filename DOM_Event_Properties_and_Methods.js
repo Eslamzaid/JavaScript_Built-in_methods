@@ -147,7 +147,6 @@ document.addEventListener("wheel", preventScrollWheel);
 //? value indicating whether or not an event is a
 //? cancelable event.
 
-
 //! The clientX read-only property of the MouseEvent interface provides the horizontal coordinate within the application's viewport at which the event occurred (as opposed to the coordinate within the page).
 
 // HTML
@@ -166,3 +165,41 @@ function logKey(e) {
 //? The clientX property returns the horizontal
 //? coordinate (according to the client area) of the
 //? mouse pointer when a mouse event was triggered
+
+//! KeyboardEvent code
+{
+  /* 
+HTML
+<p>
+  Press keys on the keyboard to see what the KeyboardEvent's key and code values
+  are for each one.
+</p>
+<div id="output" tabindex="0"></div>
+Copy to Clipboard
+CSS
+#output {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  width: 95%;
+  margin: auto;
+}
+#output:focus-visible {
+  outline: 3px solid dodgerblue;
+}
+Copy to Clipboard
+*/
+}
+// JavaScript
+window.addEventListener(
+  "keydown",
+  (event) => {
+    const p = document.createElement("p");
+    p.textContent = `KeyboardEvent: key='${event.key}' | code='${event.code}'`;
+    document.getElementById("output").appendChild(p);
+    window.scrollTo(0, document.body.scrollHeight);
+  },
+  true
+);
+
+// ? The code property returns the key that triggered the
+// ? event.
