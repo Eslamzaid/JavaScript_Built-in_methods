@@ -203,3 +203,24 @@ window.addEventListener(
 
 // ? The code property returns the key that triggered the
 // ? event.
+
+
+//! // Create the event.
+const Ourevent = document.createEvent("Event");
+
+// Define that the event name is 'build'.
+Ourevent.initEvent("build", true, true);
+
+// Listen for the event.
+elem.addEventListener(
+  "build",
+  (e) => {
+    // e.target matches elem
+  },
+  false
+);
+
+// Target can be any Element or other EventTarget.
+elem.dispatchEvent(Ourevent);
+
+//? The createEvent() method creates an event object
