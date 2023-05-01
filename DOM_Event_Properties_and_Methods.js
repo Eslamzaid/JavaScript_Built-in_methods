@@ -224,3 +224,21 @@ elem.addEventListener(
 elem.dispatchEvent(Ourevent);
 
 //? The createEvent() method creates an event object
+
+
+//! MouseEvent ctrlKey
+
+{/* 
+<p>Click anywhere to test the <code>ctrlKey</code> property.</p>
+<p id="log"></p>
+Copy to Clipboard
+*/}
+let log2 = document.querySelector("#log");
+document.addEventListener("click", logKey);
+
+function logKey(e) {
+  log2.textContent = `The ctrl key is pressed: ${e.ctrlKey}`;
+}
+// ? The ctrlKey property returns a Boolean value that
+// ? indicates whether or not the “CTRL” key was pressed
+// ? when a mouse event was triggered.
