@@ -242,3 +242,8 @@ function logKey(e) {
 // ? The ctrlKey property returns a Boolean value that
 // ? indicates whether or not the “CTRL” key was pressed
 // ? when a mouse event was triggered.
+
+
+// ! currentTarget
+const element = event.currentTarget;
+//? The currentTarget property returns the element whose event listener triggered the event.
