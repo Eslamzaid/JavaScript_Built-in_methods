@@ -247,3 +247,20 @@ function logKey(e) {
 // ! currentTarget
 const element = event.currentTarget;
 //? The currentTarget property returns the element whose event listener triggered the event.
+
+
+//! InputEvent
+//?The data read-only property of the InputEvent interface returns a string with inserted characters.
+//? This may be an empty string if the change doesn't insert text,
+//? such as when characters are deleted.
+
+// *<p>Some text to copy and paste.</p>
+// <input type="text" />
+// <p class="result"></p>
+
+const editable = document.querySelector("input");
+const result = document.querySelector(".result");
+
+editable.addEventListener("input", (e) => {
+  result.textContent = `Inputted text: ${e.data}`;
+});
