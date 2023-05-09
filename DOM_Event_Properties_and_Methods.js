@@ -264,3 +264,18 @@ const result = document.querySelector(".result");
 editable.addEventListener("input", (e) => {
   result.textContent = `Inputted text: ${e.data}`;
 });
+
+
+//! defaultPrevented Event 
+
+// Example
+// Prevent a link from opening the URL, and check if preventDefault() was called:
+
+document.getElementById("myAnchor").addEventListener("click", function(event){
+  event.preventDefault()
+  alert("Was preventDefault() called: " + event.defaultPrevented);
+});
+
+//? The defaultPrevented event property checks whether the preventDefault() method was called for the event.
+
+  
