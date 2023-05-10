@@ -204,7 +204,6 @@ window.addEventListener(
 // ? The code property returns the key that triggered the
 // ? event.
 
-
 //! // Create the event.
 const Ourevent = document.createEvent("Event");
 
@@ -225,14 +224,15 @@ elem.dispatchEvent(Ourevent);
 
 //? The createEvent() method creates an event object
 
-
 //! MouseEvent ctrlKey
 
-{/* 
+{
+  /* 
 <p>Click anywhere to test the <code>ctrlKey</code> property.</p>
 <p id="log"></p>
 Copy to Clipboard
-*/}
+*/
+}
 let log2 = document.querySelector("#log");
 document.addEventListener("click", logKey);
 
@@ -243,11 +243,9 @@ function logKey(e) {
 // ? indicates whether or not the “CTRL” key was pressed
 // ? when a mouse event was triggered.
 
-
 // ! currentTarget
 const element = event.currentTarget;
 //? The currentTarget property returns the element whose event listener triggered the event.
-
 
 //! InputEvent
 //?The data read-only property of the InputEvent interface returns a string with inserted characters.
@@ -265,17 +263,24 @@ editable.addEventListener("input", (e) => {
   result.textContent = `Inputted text: ${e.data}`;
 });
 
-
-//! defaultPrevented Event 
+//! defaultPrevented Event
 
 // Example
 // Prevent a link from opening the URL, and check if preventDefault() was called:
 
-document.getElementById("myAnchor").addEventListener("click", function(event){
-  event.preventDefault()
+document.getElementById("myAnchor").addEventListener("click", function (event) {
+  event.preventDefault();
   alert("Was preventDefault() called: " + event.defaultPrevented);
 });
 
 //? The defaultPrevented event property checks whether the preventDefault() method was called for the event.
 
-  
+//! deltaX property
+
+function myFunction(event) {
+  var x = event.deltaX;
+}
+
+//? The deltaX property returns a positive value when scrolling to the right, and a negative value when scrolling to the left, otherwise 0.
+//? Note: Most mouse devices do not have the ability to scroll left and right, and will always return 0.
+//? Note: This property is read-only.
