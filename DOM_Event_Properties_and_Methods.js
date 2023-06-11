@@ -275,7 +275,7 @@ document.getElementById("myAnchor").addEventListener("click", function (event) {
 
 //? The defaultPrevented event property checks whether the preventDefault() method was called for the event.
 
-//! deltaX property
+//! WheelEvent: deltaX property
 
 function myFunction(event) {
   var x = event.deltaX;
@@ -283,4 +283,13 @@ function myFunction(event) {
 
 //? The deltaX property returns a positive value when scrolling to the right, and a negative value when scrolling to the left, otherwise 0.
 //? Note: Most mouse devices do not have the ability to scroll left and right, and will always return 0.
+//? Note: This property is read-only.
+
+//! WheelEvent: deltaY property
+
+function myFunction(event) {
+  var y = event.deltaY;
+}
+
+//? The deltaY property returns a positive value when scrolling down, and a negative value when scrolling up, otherwise 0.
 //? Note: This property is read-only.
