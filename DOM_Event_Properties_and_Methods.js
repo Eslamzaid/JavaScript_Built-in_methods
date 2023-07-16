@@ -294,7 +294,6 @@ function myFunction(event) {
 //? The deltaY property returns a positive value when scrolling down, and a negative value when scrolling up, otherwise 0.
 //? Note: This property is read-only.
 
-
 //! WheelEvent: deltaZ property
 
 function myFunction2(event) {
@@ -305,3 +304,13 @@ function myFunction2(event) {
 
 //* Note: Most mouse devices do not have the ability to scroll along the z-axis, and will always return 0.
 //* Note: This property is read-only.
+
+//! WheelEvent deltaMode
+
+function deltaModeWheel(event) {
+  let z = event.deltaMode;
+}
+
+//? The deltaMode property returns a number
+//? representing the length unit of the scrolling values
+//? (deltaX, deltaY, and deltaZ).
