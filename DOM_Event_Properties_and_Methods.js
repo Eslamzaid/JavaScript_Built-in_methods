@@ -1,3 +1,4 @@
+// ----------------------------------------------
 //! MouseEvent.altKey
 //? It returns a boolean if an alt key was pressed with a mouse trigger
 
@@ -10,6 +11,8 @@ document.addEventListener("click", logKey);
 function logKey(e) {
   log.textContent = `The alt key is pressed: ${e.altKey}`;
 }
+
+// ----------------------------------------------
 
 //! KeyboardEvent altKey
 {
@@ -40,6 +43,8 @@ You can also use the SHIFT key together with the ALT key.
 //? The altKey property returns a Boolean value that
 //? indicates whether or not the “ALT” key was pressed
 //? when a key event was triggered.
+
+// ----------------------------------------------
 
 //! AnimationEvent animationName
 {
@@ -84,7 +89,9 @@ function myStartFunction(event) {
 //? The animationName property returns the name of the animation,
 //? when an animation event occurs.
 
-// ! bubbles
+// ----------------------------------------------
+
+//! bubbles
 function handleInput(e) {
   // Check whether the event bubbles passes the event along
   if (!e.bubbles) {
@@ -99,7 +106,9 @@ function handleInput(e) {
 //? that indicates whether or not an event is a bubbling
 //? event.
 
-// ! MouseEvent button
+// ----------------------------------------------
+
+//! MouseEvent button
 
 //<p id="demo"></p>
 function WhichButton(event) {
@@ -107,7 +116,9 @@ function WhichButton(event) {
   document.getElementById("demo").innerHTML = text;
 }
 
-// ! MouseEvent Buttons
+// ----------------------------------------------
+
+//! MouseEvent Buttons
 {
   /*
 <p>Click anywhere with one or more mouse buttons.</p>
@@ -129,7 +140,9 @@ document.querySelector("#log").appendChild(logg);
 //? which mouse button or mouse buttons were pressed
 //? when a mouse event was triggered.
 
-// ! cancelable
+// ----------------------------------------------
+
+//! cancelable
 function preventScrollWheel(event) {
   if (typeof event.cancelable !== "boolean" || event.cancelable) {
     // The event can be canceled, so we do so.
@@ -146,6 +159,8 @@ document.addEventListener("wheel", preventScrollWheel);
 //? The cancelable event property returns a Boolean
 //? value indicating whether or not an event is a
 //? cancelable event.
+
+// ----------------------------------------------
 
 //! The clientX read-only property of the MouseEvent interface provides the horizontal coordinate within the application's viewport at which the event occurred (as opposed to the coordinate within the page).
 
@@ -165,6 +180,8 @@ function logKey(e) {
 //? The clientX property returns the horizontal
 //? coordinate (according to the client area) of the
 //? mouse pointer when a mouse event was triggered
+
+// ----------------------------------------------
 
 //! KeyboardEvent code
 {
@@ -204,6 +221,8 @@ window.addEventListener(
 // ? The code property returns the key that triggered the
 // ? event.
 
+// ----------------------------------------------
+
 //! // Create the event.
 const Ourevent = document.createEvent("Event");
 
@@ -224,6 +243,8 @@ elem.dispatchEvent(Ourevent);
 
 //? The createEvent() method creates an event object
 
+// ----------------------------------------------
+
 //! MouseEvent ctrlKey
 
 {
@@ -243,9 +264,13 @@ function logKey(e) {
 // ? indicates whether or not the “CTRL” key was pressed
 // ? when a mouse event was triggered.
 
-// ! currentTarget
+// ----------------------------------------------
+
+//! currentTarget
 const element = event.currentTarget;
 //? The currentTarget property returns the element whose event listener triggered the event.
+
+// ----------------------------------------------
 
 //! InputEvent
 //?The data read-only property of the InputEvent interface returns a string with inserted characters.
@@ -263,6 +288,8 @@ editable.addEventListener("input", (e) => {
   result.textContent = `Inputted text: ${e.data}`;
 });
 
+// ----------------------------------------------
+
 //! defaultPrevented Event
 
 // Example
@@ -275,6 +302,8 @@ document.getElementById("myAnchor").addEventListener("click", function (event) {
 
 //? The defaultPrevented event property checks whether the preventDefault() method was called for the event.
 
+// ----------------------------------------------
+
 //! WheelEvent: deltaX property
 
 function myFunction(event) {
@@ -285,6 +314,8 @@ function myFunction(event) {
 //? Note: Most mouse devices do not have the ability to scroll left and right, and will always return 0.
 //? Note: This property is read-only.
 
+// ----------------------------------------------
+
 //! WheelEvent: deltaY property
 
 function myFunction(event) {
@@ -293,6 +324,8 @@ function myFunction(event) {
 
 //? The deltaY property returns a positive value when scrolling down, and a negative value when scrolling up, otherwise 0.
 //? Note: This property is read-only.
+
+// ----------------------------------------------
 
 //! WheelEvent: deltaZ property
 
@@ -305,6 +338,8 @@ function myFunction2(event) {
 //* Note: Most mouse devices do not have the ability to scroll along the z-axis, and will always return 0.
 //* Note: This property is read-only.
 
+// ----------------------------------------------
+
 //! WheelEvent deltaMode
 
 function deltaModeWheel(event) {
@@ -314,3 +349,20 @@ function deltaModeWheel(event) {
 //? The deltaMode property returns a number
 //? representing the length unit of the scrolling values
 //? (deltaX, deltaY, and deltaZ).
+
+
+// ----------------------------------------------
+
+//! TransitionEvent elapsedTime Property
+
+//* document.getElementById("myDIV").addEventListener("transitionend", myFunction);
+
+//* function myFunction(event) {
+//*   this.innerHTML = "Transition lasted: " + event.elapsedTime + " seconds";
+//* }
+
+//? The elapsedTime property returns the number of seconds a transition has been running, when a transitionend event occurs.
+//? Note: The return value is not affected if the transition is paused (by using the transition-delay CSS property).
+//? This property is read-only.
+
+// ----------------------------------------------
